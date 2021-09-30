@@ -2,7 +2,7 @@
 import React from 'react';
 
 import './App.css';
-import {BrowserRouter as Router} from 'react-router-dom'
+import {BrowserRouter as Router,Route,Switch} from 'react-router-dom'
 
 import About from './pages/About'
 import Contact from './pages/Contact'
@@ -15,15 +15,35 @@ import Navbar from  './pages/Navbar';
 function App() {
   return (
    <Router>
-     <div className="container-fluid">  
-     <Navbar />
-      <Home />
-      <About />
-      <Contact />
-      <Profile />
-    
+     <div>
+      <Navbar />
+        <Switch>
 
-     </div>
+
+        <Route exact path="/">
+          <Home />
+        </Route>
+
+    <Route path="/home"> 
+      <Home />
+      </Route>
+
+      <Route path="/about">
+      <About />
+   </Route>
+
+    <Route path="/contact">
+      <Contact />
+      </Route>
+
+      <Route path="/profile">
+      <Profile />
+      </Route>
+
+      </Switch>
+      </div>
+    
+    
    </Router>
   );
 }
