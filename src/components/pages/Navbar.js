@@ -25,12 +25,15 @@ function Navbar() {
             <li className="nav-item">
               <Link className="nav-link" to="/about">About</Link>
             </li>
+
             <li className="nav-item">
               <Link className="nav-link" to="/contact">Contact</Link>
             </li>
+
             <li className="nav-item">
               <Link className="nav-link" to="/profile">Profile</Link>
             </li>
+
             <li className="nav-item dropdown">
               <Link className="nav-link dropdown-toggle" to="#"
                 id="navbarDropdown"
@@ -42,7 +45,7 @@ function Navbar() {
               </Link>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <a className="dropdown-item" href="http://www.trattc.ac.th" target="_blank">
+                  <a className="dropdown-item" href="http://www.trattc.ac.th">
                     วท.ตราด
                   </a>
                 </li>
